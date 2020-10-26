@@ -22,7 +22,7 @@
 
 \begin{document}
 
-\title{热统习题的部分答案}
+\title{热统习题的部分答案(野生版)}
 \author{}
 \date{\today}
 \maketitle
@@ -42,7 +42,7 @@
 & \Rightarrow & V = \frac{\nu R T}{p} + g(p) \quad{} \text{代入$ \kappa = \frac{1}{p} + \frac{a}{V} = - \frac{1}{V} \left( \frac{\partial V}{\partial p} \right)_{T} $} \\
 & \Rightarrow & \dd( p g(p) ) = - \frac{a}{2} \dd ( p^2 ) \\
 & \Rightarrow & p g(p) = - \frac{a}{2} p^2 + \mathrm{const} \quad{} \text{代入第二行式子并整理} \\
-& \Rightarrow & pV = \nu RT - \frac{a}{2} p^2 + \mathrm{const}.
+& \Rightarrow & pV = \nu RT - \frac{a}{2} p^2 + \mathrm{const} \,.
 \end{eqnarray*}
 
 \subsection{习题1.8}
@@ -65,19 +65,19 @@
 	由于高温热源放出热量($ \Delta Q_{h} < 0 $)必定大于等于低温热源吸热($ \Delta Q_{c} > 0 $), 不失一般性, 我们假设$ T_{1} > T_{2} $, 
 	\begin{eqnarray*}
 	\Delta Q_{h} + \Delta Q_{c} \leq 0 & \Rightarrow & \left( \int_{T_{1}}^{T_{f}} + \int_{T_{2}}^{T_{f}} \right) T^{1/2} \dd T \leq 0 \\
-	& \Rightarrow & T_{f} \leq \left( \frac{T_{1}^{3/2} + T_{2}^{3/2}}{2} \right)^{2/3};
+	& \Rightarrow & T_{f} \leq \left( \frac{T_{1}^{3/2} + T_{2}^{3/2}}{2} \right)^{2/3} \,;
 	\end{eqnarray*}
 	另一方面, 由热力学第二定律: $ \Delta S \geq 0 $,
 	\begin{eqnarray*}
 	\Delta S = \left( \int_{T_{1}}^{T_{f}} + \int_{T_{2}}^{T_{f}} \right) \frac{\dbar Q}{T} 
 	\sim \left( \int_{T_{1}}^{T_{f}} + \int_{T_{2}}^{T_{f}} \right) \frac{1}{T^{1/2}} \dd T \geq 0 \\
-	\Rightarrow \quad{} T_{f} \geq \left( \frac{T_{1}^{1/2}+T_{2}^{1/2}}{2} \right)^{2}.
+	\Rightarrow \quad{} T_{f} \geq \left( \frac{T_{1}^{1/2}+T_{2}^{1/2}}{2} \right)^{2} \,.
 	\end{eqnarray*}
 	由第一题的温度表达式, 我们得到: 
 	\[ U = \left( \frac{AT(NV)^{1/3}}{3} \right)^{3/2} = C T^{3/2}. \]
 	对于整个系统而言,
 	\[ W = - \Delta U_{\text{总}} = C \left( T_{1}^{3/2} + T_{2}^{3/2} - 2 T_{f}^{3/2} \right) \leq \sqrt{\frac{A^{3}NV}{27}} 
-	\left[ T_{1}^{3/2} + T_{2}^{3/2} - 2 \left( \frac{T_{1}^{1/2}+T_{2}^{1/2}}{2} \right)^3 \right]. \]
+	\left[ T_{1}^{3/2} + T_{2}^{3/2} - 2 \left( \frac{T_{1}^{1/2}+T_{2}^{1/2}}{2} \right)^3 \right] \,. \]
 \end{itemize}
 
 \subsection{习题1.11}
@@ -87,7 +87,7 @@
 \text{代入书上式子($ 1.9.16 $)} & \Rightarrow & 
 \left( \frac{\partial U}{\partial V} \right)_{T} = - p + T \left( \frac{\partial p}{\partial T} \right)_{V} = \frac{a}{V^{2}} \\
 & \Rightarrow & \dd U = C_{V} \dd T + \left( \frac{\partial U}{\partial V} \right)_{T} \dd V = C_{V} \dd T + \frac{a}{V^{2}} \dd V \\
-& \Rightarrow & U = C_{V} T - \frac{a}{V} + U_{0}.
+& \Rightarrow & U = C_{V} T - \frac{a}{V} + U_{0} \,.
 \end{eqnarray*}
 \begin{itemize}
 	\item[1)]
@@ -96,7 +96,7 @@
 	& \Delta U = - \frac{a}{V_{f}} + \frac{a}{V_{i}} \\
 	& W = \int_{V_{i}}^{V_{f}} p \dd V = \int_{V_{i}}^{V_{f}} \left( \frac{RT_{i}}{V-b} - \frac{a}{V^2} \right) \dd V = 
 	RT_{i} \ln \left( \frac{V_{f}-b}{V_{i}-b} \right) + \frac{a}{V_{f}} - \frac{a}{V_{i}} \\
-	& \Delta S = \frac{\Delta U + W}{T_{i}} = R \ln \frac{V_{f}-b}{V_{i}-b};
+	& \Delta S = \frac{\Delta U + W}{T_{i}} = R \ln \frac{V_{f}-b}{V_{i}-b} \,;
 	\end{align*}
 	\item[2)]
 	对于等压过程, 
@@ -111,12 +111,12 @@
 	\text{由等压条件} & \Rightarrow & T \dd S = \dbar Q = C_{p} \dd T \\
 	& \Rightarrow & \dd S = C_{p} \dd(\ln T) \\
 	& \Rightarrow & \Delta S = C_{p} \ln \frac{T_{f}}{T_{i}} = C_{p} \ln 
-	\left[ \frac{V_{f}-b}{V_{i}-b} - a\left( \frac{1}{V_{i}^2} - \frac{1}{V_{f}^2} \right) \frac{V_{f}-b}{RT_{i}} \right];
+	\left[ \frac{V_{f}-b}{V_{i}-b} - a\left( \frac{1}{V_{i}^2} - \frac{1}{V_{f}^2} \right) \frac{V_{f}-b}{RT_{i}} \right] \,;
 	\end{eqnarray*}
 	\item[3)]
 	对于绝热过程, 
 	\[ \dbar Q = \dd U + p \dd V = \left( \frac{\partial U}{\partial T} \right)_{V} \dd T + 
-	\left[ \left( \frac{\partial U}{\partial V} \right)_{T} + p \right] \dd V = C_{V} \dd T + \left( \frac{a}{V^{2}} + p \right) \dd V = 0, \]
+	\left[ \left( \frac{\partial U}{\partial V} \right)_{T} + p \right] \dd V = C_{V} \dd T + \left( \frac{a}{V^{2}} + p \right) \dd V = 0 \,, \]
 	\begin{eqnarray*}
 	\text{结合状态方程} & \Rightarrow & C_{V} \dd T + \frac{RT}{V-b} \dd V = 0 \\
 	& \Rightarrow & C_{V} \ln T + R \ln (V-b) = 0 \\
@@ -127,15 +127,15 @@
 	\begin{align*}
 	& \Delta U = C_{V} T_{i} \left[ \left( \frac{V_{i}-b}{V_{f}-b} \right)^{R/C_{V}} - 1 \right] - \frac{a}{V_{f}} + \frac{a}{V_{i}} \\
 	& W = - \Delta U \\
-	& \Delta S = 0.
+	& \Delta S = 0 \,.
 	\end{align*}
 \end{itemize}
 
 \subsection{习题1.13}
 其中一个物体降温(放热): $ T_{1} \rightarrow T_{2} $, 另一个物体升温(吸热): $ T_{1} \rightarrow T_x $. 考虑整个体系, 由热力学第二定律, 
-\[ \Delta S = \left( \int_{T_{1}}^{T_{2}} + \int_{T_{1}}^{T_x} \right) \frac{C_{p}\dd T}{T} \geq 0 \quad{} \Rightarrow \quad{} T_x \geq \frac{T_{1}^2}{T_{2}}. \]
+\[ \Delta S = \left( \int_{T_{1}}^{T_{2}} + \int_{T_{1}}^{T_x} \right) \frac{C_{p}\dd T}{T} \geq 0 \quad{} \Rightarrow \quad{} T_x \geq \frac{T_{1}^2}{T_{2}} \,. \]
 因此, 
-\[ W \geq \Delta U = C_{p} (T_x + T_{2} - 2T_{1}) \geq C_{p} \left( \frac{T_{1}^2}{T_{2}} + T_{2} - 2 T_{1} \right) = C_{p} \frac{(T_{1}-T_{2})^2}{T_{2}}. \]
+\[ W \geq \Delta U = C_{p} (T_x + T_{2} - 2T_{1}) \geq C_{p} \left( \frac{T_{1}^2}{T_{2}} + T_{2} - 2 T_{1} \right) = C_{p} \frac{(T_{1}-T_{2})^2}{T_{2}} \,. \]
 
 \subsection{习题1.22}
 \begin{figure}[htbp]
@@ -148,14 +148,14 @@
 & \Rightarrow &
 \begin{cases}
 Q_2 = \frac{3}{4} Q_x - Q_y = 1200 J \\
-Q_3 = \frac{1200-Q_x}{2} + \frac{2Q_y}{3} = -200 J
+Q_3 = \frac{1200-Q_x}{2} + \frac{2Q_y}{3} = -200J
 \end{cases} \\
 & \Rightarrow & 
 \begin{cases}
 \Delta S_1 = \frac{Q_1}{T_1} = \frac{-1200}{400} = -3J/K \\
 \Delta S_2 = \frac{Q_2}{T_2} = \frac{1200}{300} = 4J/K \\ 
 \Delta S_3 = \frac{}{Q_3}{T_3} = \frac{-200}{200} = -1J/K \\
-\Delta S_{\text{总}} = \sum_{i = 1}^{3} \Delta S_{i} = 0J/K.
+\Delta S_{\text{总}} = \sum_{i = 1}^{3} \Delta S_{i} = 0J/K \,.
 \end{cases}
 \end{eqnarray*}
 
@@ -163,9 +163,9 @@ Q_3 = \frac{1200-Q_x}{2} + \frac{2Q_y}{3} = -200 J
 考虑等熵过程($ S = S_{0} $), 
 \begin{eqnarray*}
 W_{S_{0}} = \int_{V_{0}}^{V} p(S_{0},V') \dd V' = RS_{0} \ln \frac{V}{V_{0}} & \Rightarrow & p(S_{0}, V) = \frac{\dd W_{S_{0}}}{\dd V} = \frac{RS_{0}}{V} \\
-U(S_{0},V) - U(S_{0},V_{0}) = - W_{S_{0}} & \Rightarrow & U(S_{0},V) = U_{0} - RS_{0} \ln \frac{V}{V_{0}}.
+U(S_{0},V) - U(S_{0},V_{0}) = - W_{S_{0}} & \Rightarrow & U(S_{0},V) = U_{0} - RS_{0} \ln \frac{V}{V_{0}} \,.
 \end{eqnarray*}
-现在考虑一个等体过程($ V, S_{0} \rightarrow V, S $), 
+现在考虑一个等体过程($ V, S_{0} \rightarrow V, S $) \,, 
 \begin{align*}
 U(S, V) - U(S_{0}, V) & = \int_{T(S_{0},V)}^{T(S,V)} T(S',V) \dd S' \\
 & = \int_{S_{0}}^{S} \frac{RV_{0}}{V}\left( \frac{S'}{S_{0}} \right)^{a} \dd S' \\
@@ -177,7 +177,141 @@ U(S, V) - U(S_{0}, V) & = \int_{T(S_{0},V)}^{T(S,V)} T(S',V) \dd S' \\
 \[ \left( \frac{\partial p}{\partial S} \right)_{V} = - \left( \frac{\partial T}{\partial V} \right)_{S} = \frac{RV_{0}}{V^2} \left( \frac{S}{S_{0}} \right)^a \]
 \[ \Rightarrow \quad{} p(S,V) = \frac{RV_{0}S_{0}}{(a+1)V^2} \left[ \left( \frac{S}{S_{0}} \right)^{a+1} - 1 \right] + \frac{RS_{0}}{V} \]
 \[ W(S, V_{0} \rightarrow V) = \int_{V_{0}}^{V} p(S,V') \dd V' = 
-\frac{RV_{0}S_{0}}{a+1} \left[ \left( \frac{S}{S_{0}} \right)^{a+1} - 1 \right] \left( \frac{1}{V_{0}} - \frac{1}{V} \right) + RS_{0} \ln \frac{V}{V_{0}}. \]
+\frac{RV_{0}S_{0}}{a+1} \left[ \left( \frac{S}{S_{0}} \right)^{a+1} - 1 \right] \left( \frac{1}{V_{0}} - \frac{1}{V} \right) + RS_{0} \ln \frac{V}{V_{0}} \,. \]
 
+
+\newpage
+
+\section[第二章]{第二章}
+
+\subsection{习题2.2}
+\begin{align*}
+\overline{v^n} & = \frac{\int_{0}^{+\infty} v^{n+2} e^{-mv^2/2k_{B}T} \dd v}{\int_{0}^{+\infty} v^2 e^{-mv^2/2k_{B}T} \dd v} \\
+& = \frac{\int_{0}^{+\infty} \left(\frac{2k_B T}{m}\right)^{\frac{n+3}{2}} s^{\frac{n+1}{2}} e^{-s} \dd s}{\int_{0}^{+\infty} \left(\frac{2k_B T}{m}\right)^{\frac{3}{2}} s^{\frac{1}{2}} e^{-s} \dd s}
+\quad{} \text{变量代换: $s = \frac{mv^2}{2k_B T}$} \\
+& = \left( \frac{2k_B T}{m} \right)^{\frac{n}{2}} \frac{\Gamma(\frac{n+3}{2})}{{\color{red}{\Gamma(\frac{3}{2})}}} \quad{} \text{利用$\Gamma$函数的定义} \\
+& = {\color{red}{\frac{2}{\sqrt{\pi}}}} \left( \frac{2k_B T}{m} \right)^{\frac{n}{2}} \Gamma\left(\frac{n+3}{2}\right) \,.
+\end{align*}
+
+\subsection{习题2.12}
+直接利用书上例$1$的结果,
+\begin{align*}
+F & = -Nk_{B}T \ln Z = -Nk_{B}T \big( \ln V_{1} + \frac{3}{2} \ln (2\pi m k_{B}T) \big) \,, \\
+S_{\text{混前总}} & = Nk_{B} [ \ln V_1 V_2 + 3 \ln (2\pi m k_{B}T) + 3 ] + 2S_{0} \\
+& = 2Nk_{B} [ \ln \sqrt{V_1 V_2} + \frac{3}{2} \ln (2\pi m k_{B}T) + \frac{3}{2} ] + 2S_{0}, \\
+S_{\text{混后总}} & = 2Nk_{B} [ \ln (V_1+V_2) + \frac{3}{2} \ln (2\pi m k_{B}T) + \frac{3}{2}] + 2S_{0} \,, \\
+\Delta S & = S_{\text{混后总}} - S_{\text{混前总}} \\
+& = 2Nk_{B} \ln \Big( \frac{V_1 + V_2}{\sqrt{V_1 V_2}} \Big) \\
+& = 2Nk_{B} \ln \Big( \frac{p_1 + p_2}{\sqrt{p_1 p_2}} \Big) \quad{} \text{利用理想气体的状态方程.}
+\end{align*}
+
+\subsection{习题2.15}
+利用书上式子$2.5.16$及$2.5.22$:
+\[ 
+\begin{cases}
+\big( \frac{\partial p}{\partial T} \big)_{v} = \big( \frac{\partial s}{\partial v} \big)_{T} = \frac{R}{v-b} \\
+T \big( \frac{\partial p}{\partial T} \big)_{v} - p = \big( \frac{\partial u}{\partial v} \big)_{T} = \frac{a}{v^2}
+\end{cases}
+\quad{} \Rightarrow \quad{}
+\big( p + \frac{a}{v^2} \big) \big( v - b \big) = RT \,.
+\]
+
+\subsection{习题2.16}
+\begin{itemize}
+	\item[a,b)]
+	\[ \dd U = T \dd S - p \dd V = T \bigg( \frac{\partial S}{\partial p} \bigg)_{V} \dd p + \left[ T \bigg( \frac{\partial S}{\partial V} \bigg)_{p} - p \right] \dd V \]
+	\[ \Rightarrow \quad{}
+	\begin{cases}
+	\big( \frac{\partial U}{\partial p} \big)_{V} = T \big( \frac{\partial S}{\partial p} \big)_{V} = - T \big( \frac{\partial V}{\partial T} \big)_{S} \,;\\
+	\big( \frac{\partial U}{\partial V} \big)_{p} = T \big( \frac{\partial S}{\partial V} \big)_{p} - p = T \big( \frac{\partial p}{\partial T} \big)_{S} - p \,.
+	\end{cases} \]
+	\item[c)]
+	\begin{align*}
+	\dd U = T \dd S - p \dd V & = T \bigg( \frac{\partial S}{\partial T} \bigg)_{V} \dd T + \left[ T \bigg( \frac{\partial S}{\partial V} \bigg)_{T} - p \right] \dd V \\
+	& \Rightarrow T \bigg( \frac{\partial S}{\partial V} \bigg)_{T} - p = \bigg( \frac{\partial U}{\partial V} \bigg)_{T} 
+	= \frac{-1}{\big( \frac{\partial V}{\partial T} \big)_{U} \big( \frac{\partial T}{\partial U} \big)_{V}} \quad{} \text{and} \quad{}
+	\bigg( \frac{\partial U}{\partial T} \bigg)_{V} = T \bigg( \frac{\partial S}{\partial T} \bigg)_{V} \\
+	\Rightarrow \bigg( \frac{\partial T}{\partial V} \bigg)_{U} 
+	& = p \bigg( \frac{\partial T}{\partial U} \bigg)_{V} - T \bigg( \frac{\partial S}{\partial V} \bigg)_{T} \bigg( \frac{\partial T}{\partial U} \bigg)_{V} \\
+	& = p \bigg( \frac{\partial T}{\partial U} \bigg)_{V} - T \bigg( \frac{\partial S}{\partial V} \bigg)_{T} \frac{1}{T} \bigg( \frac{\partial T}{\partial S} \bigg)_{V} \\
+	& = p \bigg( \frac{\partial T}{\partial U} \bigg)_{V} + \bigg( \frac{\partial T}{\partial V} \bigg)_{S} \\
+	& = p \bigg( \frac{\partial T}{\partial U} \bigg)_{V} - T \bigg( \frac{\partial p}{\partial U} \bigg)_{V} \quad{} \text{利用$a)$结论} \,.
+	\end{align*}
+	\item[d)]
+	\begin{align*}
+	\dd H = T \dd S + V \dd p & = T \bigg( \frac{\partial S}{\partial T} \bigg)_{p} \dd T + \left[ T \bigg( \frac{\partial S}{\partial p} \bigg)_{T} + V \right] \dd p \\
+	& \Rightarrow T \bigg( \frac{\partial S}{\partial p} \bigg)_{T} + V = \bigg( \frac{\partial H}{\partial p} \bigg)_{T} \quad{} \text{and} \quad{}
+	\bigg( \frac{\partial H}{\partial T} \bigg)_{p} = T \bigg( \frac{\partial S}{\partial T} \bigg)_{p} \\
+	\text{与c)类似的程序} & \Rightarrow \bigg( \frac{\partial T}{\partial p} \bigg)_{H} 
+	= \bigg( \frac{\partial T}{\partial p} \bigg)_{S} - V \bigg( \frac{\partial T}{\partial H} \bigg)_{p}; \\
+	\dd H = T \dd S + V \dd p & = T \bigg( \frac{\partial S}{\partial V} \bigg)_{p} \dd V + \left[ T \bigg( \frac{\partial S}{\partial p} \bigg)_{V} + V \right] \dd p \\
+	& \Rightarrow \bigg( \frac{\partial H}{\partial V} \bigg)_{p} = T \bigg( \frac{\partial S}{\partial V} \bigg)_{p} = T \bigg( \frac{\partial p}{\partial T} \bigg)_{S}; \\
+	\text{综上} & \Rightarrow \bigg( \frac{\partial T}{\partial p} \bigg)_{H} 
+	= T \bigg( \frac{\partial V}{\partial H} \bigg)_{p} - V \bigg( \frac{\partial T}{\partial H} \bigg)_{p} \,.
+	\end{align*}
+	\item[e)]
+	\begin{align*}
+	\dd H = T \dd S + V \dd p & = V \bigg( \frac{\partial p}{\partial T} \bigg)_{S} \dd T + \left[ V \bigg( \frac{\partial p}{\partial S} \bigg)_{T} + T \right] \dd S \\
+	& \Rightarrow V \bigg( \frac{\partial p}{\partial S} \bigg)_{T} + T = \bigg( \frac{\partial H}{\partial S} \bigg)_{T} \quad{} \text{and} \quad{}
+	\bigg( \frac{\partial H}{\partial T} \bigg)_{S} = V \bigg( \frac{\partial p}{\partial T} \bigg)_{S} \\
+	\Rightarrow \bigg( \frac{\partial T}{\partial S} \bigg)_{H} 
+	& = - \frac{ \big( \frac{\partial H}{\partial S} \big)_{T} }{ \big( \frac{\partial H}{\partial T} \big)_{S} } \\
+	& = - \frac{T}{V} \bigg( \frac{\partial T}{\partial p} \bigg)_{S} - \frac{ \big( \frac{\partial p}{\partial S} \big)_{T} }{ \big( \frac{\partial p}{\partial T} \big)_{S} } \\
+	& = - \frac{T}{V} \bigg( \frac{\partial T}{\partial p} \bigg)_{S} + \frac{T}{T \big( \frac{\partial S}{\partial T} \big)_{p} } \\
+	& = - \frac{T^2}{V} \bigg( \frac{\partial V}{\partial H} \bigg)_{p} + \frac{T}{C_{p}} \quad{} \text{利用了$d)$第$5$行.}
+	\end{align*}
+\end{itemize}
+
+\subsection{习题2.17}
+\begin{itemize}
+	\item[a)]
+	\begin{align*}
+	\dd U = T \dd S - p \dd V & = T \bigg( \frac{\partial S}{\partial T} \bigg)_{V} \dd T + \left[ T \bigg( \frac{\partial S}{\partial V} \bigg)_{T} - p \right] \dd V \\
+	& = C_{V} \dd T + \left[ T \bigg( \frac{\partial p}{\partial T} \bigg)_{V} - p \right] \dd V \,; \\
+	\dd H = T \dd S + V \dd p & = T \bigg( \frac{\partial S}{\partial T} \bigg)_{p} \dd T + \left[ T \bigg( \frac{\partial S}{\partial p} \bigg)_{T} + V \right] \dd p \\
+	& = C_{p} \dd T + \left[ - T \bigg( \frac{\partial V}{\partial T} \bigg)_{p} + V \right] \dd p \,.
+	\end{align*}
+	由全微分条件
+	\begin{align*}
+	\bigg( \frac{\partial C_{V}}{\partial V} \bigg)_{T} & = \left( \frac{\partial \left[ T \big( \frac{\partial p}{\partial T} \big)_{V} - p \right]}{\partial T} \right)_{V}
+	= T \bigg( \frac{\partial^2 p}{\partial T^2} \bigg)_{V} \,; \\
+	\bigg( \frac{\partial C_{p}}{\partial p} \bigg)_{T} & = \left( \frac{\partial \left[ - T \big( \frac{\partial V}{\partial T} \big)_{p} + V \right]}{\partial T} \right)_{p}
+	= - T \bigg( \frac{\partial^2 V}{\partial T^2} \bigg)_{p} \,.
+	\end{align*}
+	对于理想气体而言:
+	\[ \bigg( \frac{\partial C_{V}}{\partial V} \bigg)_{T} = 0 \quad{} \text{and} \quad{} \bigg( \frac{\partial C_{p}}{\partial p} \bigg)_{T} = 0, \]
+	因此, 其$C_{V}, C_{p}$均仅为温度的函数. 对于范氏气体而言:
+	\[ \bigg( \frac{\partial C_{V}}{\partial V} \bigg)_{T} = 0, \]
+	因此, 其$C_{V}$仅为温度的函数.
+	\item[b)]
+	由前半小题, 我们有
+	\begin{align*}
+	\bigg( \frac{\partial S}{\partial V} \bigg)_{T} & = \bigg( \frac{\partial p}{\partial T} \bigg)_{V}
+	= \int \frac{1}{T} \bigg( \frac{\partial C_{V}}{\partial V} \bigg)_{T} \dd T \,; \\
+	\bigg( \frac{\partial S}{\partial p} \bigg)_{T} & = - \bigg( \frac{\partial V}{\partial T} \bigg)_{p}
+	= \int \frac{1}{T} \bigg( \frac{\partial C_{p}}{\partial p} \bigg)_{T} \dd T \,.
+	\end{align*}
+	易得, 
+	\begin{align*}
+	S & = \int_{V} \dd V \int_{T} \frac{1}{T} \bigg( \frac{\partial C_{V}}{\partial V} \bigg)_{T} \dd T = 
+	\int_{T} \frac{1}{T} \dd T {\color{cyan}{\int_{V} \dd V \bigg( \frac{\partial C_{V}}{\partial V} \bigg)_{T}}} = \int_{T} \frac{{\color{cyan}{C_{V_{0}}}}}{T} \dd T \,; \\
+	S & = \int_{p} \dd p \int_{T} \frac{1}{T} \bigg( \frac{\partial C_{p}}{\partial p} \bigg)_{T} \dd T = 
+	\int_{T} \frac{1}{T} \dd T {\color{red}{\int_{p} \dd p \bigg( \frac{\partial C_{p}}{\partial p} \bigg)_{T}}} = \int_{T} \frac{{\color{red}{C_{p_{0}}}}}{T} \dd T \,
+	\end{align*}
+	因此,
+	\begin{align*}
+	F & = - \int p \dd V - \int S \dd T = - \int p \dd V - \int \dd T \int \frac{C_{V_{0}}}{T} \dd T \,; \\
+	G & = \int V \dd p - \int S \dd T = \int V \dd p - \int \dd T \int \frac{C_{p_{0}}}{T} \dd T \,.
+	\end{align*}
+\end{itemize}
+
+\subsection{习题2.19}
+能量由两部分组成, 分别是平动动能$\epsilon^{t}$与转动动能$\epsilon^{r}$. 注意到我们的目标是求状态方程, 因此我们只需要关心配分函数对$V$的依赖,
+\[ Z = Z^{t} \cdot Z^{r} = \int e^{-\beta \frac{p^2}{2m}} \dd x \dd y \dd z \dd p_{x} \dd p_{y} \dd p_{z} \times 
+\int e^{- \frac{\beta}{2I} \big( p_{\theta}^2 + \frac{p_{\varphi}^2}{\sin^2\!\theta} \big)} \dd \theta \dd \varphi \dd p_{\theta} \dd p_{\varphi} = V \times g(\text{不涉及$V$}).
+\]
+因此, 状态方程为:
+\[ p = \frac{N}{\beta} \frac{\partial \ln Z}{\partial V} = \frac{N}{\beta V}, \]
+即为理想气体的状态方程.
 
 \end{document}
