@@ -314,4 +314,120 @@ T \big( \frac{\partial p}{\partial T} \big)_{v} - p = \big( \frac{\partial u}{\p
 \[ p = \frac{N}{\beta} \frac{\partial \ln Z}{\partial V} = \frac{N}{\beta V}, \]
 即为理想气体的状态方程.
 
+\newpage
+\section{第三章}
+
+\subsection{习题3.1}
+先计算体系的配分函数
+\[ P = Z^{N} = V^{N} \left[ \frac{2\pi m}{\beta} \right]^{\frac{3N}{2}},  \]
+\begin{itemize}
+	\item[a)]
+	由此可得体系的平均能量
+	\[ \bar{E} = - \frac{\partial \ln P}{\partial \beta} = \frac{3}{2} Nk_{B}T; \]
+	\item[b)]
+	求最概然能量$E_{p}$需写出能量的概率分布
+	\[ f(E)\dd E = e^{-\Psi - \beta E} \dd \Omega(E) = e^{-\Psi - \beta E} \Omega'(E) \dd E \propto e^{-\beta E} E^{\frac{3N}{2}-1} \dd E \quad{} 
+	\Rightarrow \quad{} f(E) \propto e^{-\beta E} E^{\frac{3N}{2}-1}, \]
+	因此
+	\[ \frac{\partial f(E)}{\partial E} \bigg|_{E=E_{p}} = 0 \quad{} \Rightarrow \quad{} E_{p} = \left(\frac{3}{2}N - 1\right) k_{B}T. \]
+\end{itemize}
+
+\subsection{习题3.3}
+考虑到每个自旋有两种状态, 记为: $+1, -1$, 且分别对应了两个能量的取值: $-\mu H, +\mu H$. 体系的所有自旋的状态的选取确定了体系的一个构型(configuration), 例: 
+$\{s_{i}\} = \{+1, -1, -1, -1, +1, \cdots\}$, 表示体系第$1$个自旋处于$+1$的状态, 第$2$个自旋处于$-1$的状态, 等等. 为了求体系的配分函数, 我们需要对体系的所有构型求和
+\begin{align*}
+P & = \sum_{\{s_{i}\}} e^{-\beta \sum_{i=1}^{N} (-1)^{(s_{i}+1)/2} \mu H} = \sum_{\{s_{i}\}} \prod_{i=1}^{N} e^{-\beta (-1)^{(s_{i}+1)/2} \mu H} \\
+& = \prod_{i=1}^{N} \sum_{s_{i}=\pm1} e^{-\beta (-1)^{(s_{i}+1)/2} \mu H} = \prod_{i=1}^{N} \left( e^{-\beta \mu H} + e^{\beta \mu H} \right) \\
+& = \big(2 \cosh (\beta \mu H)\big)^{N} \,,
+\end{align*}
+因此可得体系的内能, 熵, 热容和总磁矩分别为
+\[\begin{cases}
+U = -\frac{\partial}{\partial \beta} \ln P = -N \mu H \tanh(\beta \mu H)\,;\\
+S = S_{0} + k_{B} \big( \ln P - \beta \frac{\partial}{\partial \beta} \ln P \big) = S_{0} + Nk_{B} \big( \ln (2\cosh \beta \mu H) - \beta \mu H \tanh \beta \mu H \big)\,;\\
+C_{H} = \left( \frac{\partial U}{\partial T} \right)_{H} = - k_{B} \beta^2 \big( \frac{\partial U}{\partial \beta} \big)_{H} 
+= N k_{B} \frac{(\beta \mu H)^2}{\cosh^2(\beta \mu H)}\,;\\
+M = \frac{1}{\beta} \frac{\partial \ln P}{\partial H} = N \mu \tanh(\beta \mu H)\,.
+\end{cases}\]
+
+\subsection{习题3.7}
+先求体系的配分函数
+\[ P = V^{N} \bigg[ 4\pi \int_{0}^{+\infty} e^{-\beta c p} p^2 \dd p \bigg]^{N}  = \bigg[ \frac{8\pi V}{(c\beta)^3} \bigg]^{N}\,, \]
+由此可得体系的状态方程与内能
+\[\begin{cases}
+p = \frac{1}{\beta} \frac{\partial \ln P}{\partial V} = \frac{N}{\beta V} \quad{} \Rightarrow \quad{} pV = Nk_{B}T\,;\\
+U = -\frac{\partial \ln P}{\partial \beta} = 3Nk_{B}T.
+\end{cases}\]
+
+\subsection{习题3.11}
+由能均分定理
+\[ \overline{\frac{1}{2} m v_{i}^2} = \frac{1}{2} k_{B}T \quad{} \Rightarrow \quad{} \overline{v_{i}^2} = \frac{k_{B}T}{m}, \]
+\begin{itemize}
+	\item[a)]
+	\[ \overline{v_{x}^3} \propto \int_{-\infty}^{+\infty} e^{-\beta m v_{x}^2/2} v_{x}^3 \dd v_{x} = 0\,;  \]
+	\item[b)]
+	\[ \overline{v_{x}^3 v_{y}} \propto \int_{-\infty}^{+\infty} e^{-\beta mv_{x}^2/2} v_{x}^3 \dd v_{x} \times \int_{-\infty}^{+\infty} e^{-\beta mv_{y}^2/2} v_{y} \dd v_{y} = 0\,; \]
+	\item[c)]
+	\[ \overline{v_{x}^2 v_{y}^2} = \overline{v_{x}^2} \times \overline{v_{y}^2} = \bigg( \frac{k_{B}T}{m} \bigg)^2\,; \]
+	\item[d)]
+	\[ \overline{(v_{x}+av_{y})^2} = \overline{v_{x}^2 + 2a v_{x} v_{y} + a^2 v_{y}^2} = \overline{v_{x}^2} + 0 + a^2 \overline{v_{y}^2} = (a^2+1) \frac{k_{B}T}{m}\,; \]
+	\item[e)]
+	\[ \overline{v^2 v_{x}} = \overline{v_{x}^3} + \overline{v_{y}^2 v_{x}} + \overline{v_{z}^2 v_{x}} = 0\,. \]
+\end{itemize}
+
+\subsection{习题3.12}
+\begin{itemize}
+	\item[a)]
+	\[ \text{由能均分定理} \quad{} \Rightarrow \quad{} \bar{\epsilon} = \frac{5}{2} k_{B}T\,; \]
+	\item[b)]
+	\[ \overline{\frac{1}{2}m(v_{y}-v_{0})^2} = \overline{\frac{1}{2}m v_{y}^2 + \frac{1}{2} m v_{0}^2 - mv_{y}v_{0}} = \overline{\frac{1}{2}mv_{y}^2} - \frac{1}{2} m v_{0}^2 = \frac{1}{2} k_{B}T\,, \]
+	因此, 我们有
+	\[ \overline{\frac{1}{2}mv_{y}^2} = \frac{1}{2} k_{B}T + \frac{1}{2} m v_{0}^2\,. \]
+\end{itemize}
+
+\subsection{习题3.15}
+\begin{itemize}
+	\item[a)]
+	\begin{align*}
+	\left\langle \frac{\Omega(E)}{\Omega'(E)} \right\rangle_{\text{c.e.}} & = \int_{\Omega} e^{-\Psi - \beta E} \frac{\Omega(E)}{\Omega'(E)} \dd \Omega(E) \\
+	& = \int_{0}^{+\infty} e^{-\Psi -\beta E} \Omega(E) \dd E \\
+	& = - \frac{1}{\beta} \int e^{-\Psi} \Omega(E) \dd e^{-\beta E} \\
+	& = - \frac{1}{\beta} e^{-\Psi - \beta E} \Omega(E) \bigg|_{E=0}^{E=+\infty} + \frac{1}{\beta} \int_{\Omega} e^{-\Psi - \beta E} \dd \Omega(E) \\
+	& = \frac{1}{\beta}\,;
+	\end{align*}
+	\item[b)]
+	由能量的概率分布
+	\[ f(E) \dd E = e^{-\Psi - \beta E} \dd \Omega(E) = e^{-\Psi - \beta E} \Omega'(E) \dd E \quad{} \Rightarrow \quad{} f(E) = e^{-\Psi - \beta E} \Omega'(E), \]
+	我们有
+	\[ \frac{\partial f(E)}{\partial E} \bigg|_{E=E_{p}} = 0 \quad{} \Rightarrow \quad{} \frac{\Omega''(E_{p})}{\Omega'(E_{p})} = \beta\,. \]
+\end{itemize}
+
+\subsection{补充S1}
+先求体系的配分函数
+\[ P = Z^{N} = V^{N} \left[ \frac{2\pi m}{\beta} \right]^{\frac{3N}{2}},  \]
+由此得到系统的状态方程, 内能和熵为
+\[\begin{cases}
+p = \frac{1}{\beta} \frac{\partial \ln P}{\partial V} \quad{} \Rightarrow \quad{} pV = Nk_{B}T\,;\\
+U = - \frac{\partial \ln P}{\partial \beta} = \frac{3}{2}Nk_{B}T\,;\\
+S = S_{0} + Nk_{B} \big[ \ln V + \frac{3}{2} \ln (2\pi m k_{B} T) + \frac{3}{2} \big]\,.
+\end{cases}\]
+
+\subsection{补充S2}
+先求体系的配分函数
+\[ Z_{g.c.} = e^{\zeta} = \sum_{N} \frac{e^{-N\alpha}}{N!} \int e^{-\beta E} \dd \Omega = 
+\sum_{N} \frac{(e^{-\alpha})^N}{N!} V^N \left( \frac{2\pi m}{\beta} \right)^{\frac{3N}{2}} =
+\exp\bigg[ e^{-\alpha} V \Big( \frac{2\pi m}{\beta} \Big)^{3/2} \bigg], \]
+因此
+\[ \zeta = e^{-\alpha} V \Big( \frac{2\pi m}{\beta} \Big)^{3/2}. \]
+由此我们能得到体系的状态方程, 内能, 熵, 化学势和分子数的相对涨落
+\[\begin{cases}
+\bar{N} = - \frac{\partial \zeta}{\partial \alpha} = \zeta;\\
+p = \frac{1}{\beta} \frac{\partial \zeta}{\partial V} = \frac{\zeta}{\beta V} \quad{} \Rightarrow \quad{} pV = \bar{N} k_{B} T;\\
+U = - \frac{\partial \zeta}{\partial \beta} = \frac{3}{2} \bar{N} k_{B} T;\\
+S = S_{0} + k_{B} \left( \zeta - \beta \frac{\partial \zeta}{\partial \beta} - \alpha \frac{\partial \zeta}{\partial \alpha} \right) = S_{0} + \left( \frac{5}{2} + \alpha \right) \bar{N} k_{B};\\
+\mu = -\alpha k_{B} T;\\
+\overline{N^2} = \sum_{N} \frac{e^{-\zeta-N\alpha}N^2}{N!} \int \cdots = e^{-\zeta} \frac{\partial^2}{\partial \alpha^2} Z_{g.c.} = 
+e^{-\zeta} \frac{\partial^2}{\partial \alpha^2} e^{\zeta} = \zeta + \zeta^2;\\
+\overline{(\Delta N)^2} / \bar{N}^2 = \frac{\overline{N^2}-\bar{N}^2}{\bar{N}^2} = \frac{1}{\zeta} = \frac{1}{\bar{N}}.
+\end{cases}\]
+
 \end{document}
