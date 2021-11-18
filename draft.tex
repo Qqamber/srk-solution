@@ -404,12 +404,20 @@ U = -\frac{\partial \ln P}{\partial \beta} = 3Nk_{B}T.
 \subsection{补充S1}
 先求体系的配分函数
 \[ P = Z^{N} = V^{N} \left[ \frac{2\pi m}{\beta} \right]^{\frac{3N}{2}},  \]
-由此得到系统的状态方程, 内能和熵为
+由此得到系统的状态方程, 内能, 熵和热容量为
 \[\begin{cases}
 p = \frac{1}{\beta} \frac{\partial \ln P}{\partial V} \quad{} \Rightarrow \quad{} pV = Nk_{B}T\,;\\
 U = - \frac{\partial \ln P}{\partial \beta} = \frac{3}{2}Nk_{B}T\,;\\
-S = S_{0} + Nk_{B} \big[ \ln V + \frac{3}{2} \ln (2\pi m k_{B} T) + \frac{3}{2} \big]\,.
+S = S_{0} + Nk_{B} \big[ \ln V + \frac{3}{2} \ln (2\pi m k_{B} T) + \frac{3}{2} \big]\,;\\
+C_{\rm v} = \frac{\partial U}{\partial T} = \frac{3}{2} Nk_B\,.
 \end{cases}\]
+最后, 我们来算体系的能量涨落: 
+\begin{align*}
+\bar{E^2} & = \int E^{2} e^{-\Psi-\beta E} {\rm d}\Omega = e^{-\Psi} \frac{\partial^{2} e^{\Psi}}{\partial \beta^{2}} = 
+\frac{\partial^{2} \Psi}{\partial \beta^{2}} + \left( \frac{\partial \Psi}{\partial \beta} \right)^{2}\,\\
+& \Downarrow \, \\
+(E-\bar{E})^{2} & = \bar{E^{2}} - \bar{E}^{2} = \frac{\partial^{2} \Psi}{\partial \beta^{2}} = \frac{3}{2} N k_{B}^{2} T^{2}\,.
+\end{align*}
 
 \subsection{补充S2}
 先求体系的配分函数
