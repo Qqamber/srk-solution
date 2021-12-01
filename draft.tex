@@ -147,15 +147,15 @@
 \frac{1200-Q_x}{2} + \frac{Q_y}{3} + \frac{Q_x}{4} = 200 & \Rightarrow & \frac{3}{4}Q_x - Q_y = 1200 \\
 & \Rightarrow &
 \begin{cases}
-Q_2 = \frac{3}{4} Q_x - Q_y = 1200 J \\
-Q_3 = \frac{1200-Q_x}{2} + \frac{2Q_y}{3} = -200J
+Q_2 = \frac{3}{4} Q_x - Q_y = 1200 {\rm J} \\
+Q_3 = \frac{1200-Q_x}{2} + \frac{2Q_y}{3} = -200{\rm J}
 \end{cases} \\
 & \Rightarrow & 
 \begin{cases}
-\Delta S_1 = \frac{Q_1}{T_1} = \frac{-1200}{400} = -3J/K \\
-\Delta S_2 = \frac{Q_2}{T_2} = \frac{1200}{300} = 4J/K \\ 
-\Delta S_3 = \frac{}{Q_3}{T_3} = \frac{-200}{200} = -1J/K \\
-\Delta S_{\text{总}} = \sum_{i = 1}^{3} \Delta S_{i} = 0J/K \,.
+\Delta S_1 = \frac{Q_1}{T_1} = \frac{-1200}{400} = -3{\rm J}/{\rm K} \\
+\Delta S_2 = \frac{Q_2}{T_2} = \frac{1200}{300} = 4{\rm J}/{\rm K} \\ 
+\Delta S_3 = \frac{}{Q_3}{T_3} = \frac{-200}{200} = -1{\rm J}/{\rm K} \\
+\Delta S_{\text{总}} = \sum_{i = 1}^{3} \Delta S_{i} = 0{\rm J}/{\rm K} \,.
 \end{cases}
 \end{eqnarray*}
 
@@ -466,13 +466,52 @@ e^{-\zeta} \frac{\partial^2}{\partial \alpha^2} e^{\zeta} = \zeta + \zeta^2;\\
 \end{align*}
 
 \subsection{习题4.17}
-考虑到膨胀前后的粒子数不变, $N_{1} = N_{2}$
-\[\begin{cases}
-N_{1} = \frac{8 \pi V_{1}}{3 h^3} (2m)^{3/2} \mu_{0}^{3/2} \,; \\
-N_{2} = \frac{8 \pi V_{2}}{3 h^3} (2m)^{3/2} \mu^{3/2} \big[ 1 + \frac{\pi^2}{8}\big( \frac{k_{B} T}{\mu} \big)^2 + \cdots \big] \,,
-\end{cases}\]
-\[ \Rightarrow \quad{} \mu^{3/2} \approx \frac{V_1}{V_2} \mu_{0}^{3/2} \big[ 1 - \frac{\pi^2}{8} \big( \frac{k_{B} T}{\mu} \big)^2 \big] \,. \]
-显然, 膨胀前后内能也不发生改变, $E_1 = E_2$
+考虑到膨胀前后的粒子数不变, $N_{1} = N_{2} = N$
+\begin{align*}
+N_{1} & = \frac{8 \pi V_{1}}{3 h^3} (2m)^{3/2} \mu_{0}^{3/2} \,; \\
+N_{2} & = \frac{8 \pi V_{2}}{3 h^3} (2m)^{3/2} \mu^{3/2} \left[ 1 + \frac{\pi^2}{8}\left( \frac{k_{B} T}{\mu} \right)^2 + \cdots \right] \,,
+\end{align*}
+\[ \Rightarrow \quad{} \mu^{3/2} \approx \frac{V_1}{V_2} \mu_{0}^{3/2} \left[ 1 - \frac{\pi^2}{8} \left( \frac{k_{B} T}{\mu} \right)^2 \right] \,, \]
+\[ \Rightarrow \quad{} \mu^{5/2} \approx \left( \frac{V_{1}}{V_{2}} \right)^{5/3} \mu_{0}^{5/2} \left[ 1 - \frac{5\pi^2}{24} \left( \frac{k_{B} T}{\mu} \right)^{2} \right] \]
+显然, 膨胀前后内能也不发生改变, $E_{1} = E_{2} = E$
+\begin{align*}
+E_{1} & = \frac{8\pi V_{1}}{h^{3}} \sqrt{2} m^{3/2} \frac{2}{5} \mu_{0}^{5/2} \,; \\
+E_{2} & = \frac{8\pi V_{2}}{h^{3}} \sqrt{2} m^{3/2} \frac{2}{5} \mu^{5/2} \left[ 1 + \frac{5\pi^{2}}{8} \left( \frac{k_{B}T}{\mu} \right)^{2} + \cdots \right] \\
+& \approx \frac{8\pi V_{2}}{h^{3}} \sqrt{2} m^{3/2} \frac{2}{5} \left( \frac{V_{1}}{V_{2}} \right)^{5/3} \mu_{0}^{5/2} \left[ 1 - \frac{5\pi^2}{24} \left( \frac{k_{B} T}{\mu} \right)^{2} \right] \left[ 1 + \frac{5\pi^{2}}{8} \left( \frac{k_{B}T}{\mu} \right)^{2} + \cdots \right] \\
+& \approx \frac{8\pi V_{2}}{h^{3}} \sqrt{2} m^{3/2} \frac{2}{5} \left( \frac{V_{1}}{V_{2}} \right)^{5/3} \mu_{0}^{5/2} \left[ 1 + \frac{5\pi^{2}}{12} \left( \frac{k_{B}T}{\mu} \right)^{2} \right] \,,
+\end{align*}
+\[ \Rightarrow \quad{} V_{1} \mu_{0}^{5/2} = V_{2} \left( \frac{V_{1}}{V_{2}} \right)^{5/3} \mu_{0}^{5/2} \left[ 1 + \frac{5\pi^{2}}{12} \left( \frac{k_{B}T}{\mu} \right)^{2} \right] \,, \]
+\[ \Rightarrow \quad{} \frac{k_{B}T}{\mu} = \sqrt{ \frac{12}{5\pi^{2}} \left[ \left( \frac{V_{2}}{V_{1}} \right)^{3/2} - 1 \right] }\,. \]
+最后再利用一下$\mu$粗的近似
+\[ \mu \approx \left( \frac{3}{8\pi} \right)^{2/3} \frac{h^{2}}{2m} \left(\frac{N}{V_{2}} \right)^{2/3}\,, \]
+\[ \Rightarrow \quad{} T = \left( \frac{3}{8\pi} \right)^{2/3} \frac{h^{2}}{2mk_{B}} \left(\frac{N}{V_{2}} \right)^{2/3} \sqrt{ \frac{12}{5\pi^{2}} \left[ \left( \frac{V_{2}}{V_{1}} \right)^{3/2} - 1 \right] }\,. \]
 
+\subsection{习题4.19}
+利用可逆绝热条件及黑体辐射的相关结论
+\begin{align*}
+0 & =  T \dd S = \dd U + p\dd V \,; \\
+p & = \frac{1}{3} u = \frac{1}{3} a T^{4} \,; \\
+U & = uV = a T^{4} V \,,
+\end{align*}
+将$p$与$U$代入热一公式后整理得到
+\[ \dd \left( 3 \log{T} + \log{V} \right) = 0 \quad{} \Rightarrow \quad{} VT^{3} = {\rm const} \quad{} \Rightarrow \quad{} T_{\rm f} = 500 {\rm K}\,. \]
+
+\subsection{习题4.20}
+由苏书$(4.14.9)$及$(4.14.4)$
+\begin{align*}
+\left( \frac{\partial p}{\partial V} \right)_{T=0} & = - \frac{h^{2}}{3mV} \left( \frac{3}{8\pi} \right)^{2/3} \left( \frac{N}{V} \right)^{5/3} = - \frac{2}{3V} \epsilon_{F} n \,, \\
+\Rightarrow \quad{} \kappa\rvert_{T=0} & = - \frac{1}{V} \left( \frac{\partial V}{\partial p} \right)_{T=0} = \frac{3}{2} \frac{1}{n\epsilon_{F}}\,.
+\end{align*}
+
+\subsection{习题4.25}
+\begin{itemize}
+	\item[a)]
+	$\phi_{\vec{p}} \propto \exp{(i \vec{p} \cdot \vec{r})/\hbar} \quad{}$ 由周期边界条件 $\Rightarrow \quad{} p_{\alpha} L = 2\pi\hbar n_{\alpha}\quad{} (\alpha = x, y, z)$
+	\[ \Rightarrow \quad{} \epsilon = c\lvert{\vec{p}}\rvert = \frac{2\pi c\hbar}{V^{1/3}} \sqrt{n_{x}^{2}+n_{y}^{2}+n_{z}^{2}}\,. \]
+	\item[b)]
+	由习题$3.7$, $p=\frac{U}{3V}, p_{\rm s}=\frac{U}{3NV}\,.$
+\end{itemize}
+
+\subsection{习题4.26}
 
 \end{document}
