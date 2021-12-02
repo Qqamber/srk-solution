@@ -506,12 +506,39 @@ U & = uV = a T^{4} V \,,
 \subsection{习题4.25}
 \begin{itemize}
 	\item[a)]
-	$\phi_{\vec{p}} \propto \exp{(i \vec{p} \cdot \vec{r})/\hbar} \quad{}$ 由周期边界条件 $\Rightarrow \quad{} p_{\alpha} L = 2\pi\hbar n_{\alpha}\quad{} (\alpha = x, y, z)$
+	$\phi_{\vec{p}} \propto \exp{(i \vec{p} \cdot \vec{r} / \hbar)} \quad{}$ 由边界条件 $\Rightarrow \quad{} p_{\alpha} L = 2\pi\hbar n_{\alpha}\quad{} (\alpha = x, y, z)$
 	\[ \Rightarrow \quad{} \epsilon = c\lvert{\vec{p}}\rvert = \frac{2\pi c\hbar}{V^{1/3}} \sqrt{n_{x}^{2}+n_{y}^{2}+n_{z}^{2}}\,. \]
 	\item[b)]
 	由习题$3.7$, $p=\frac{U}{3V}, p_{\rm s}=\frac{U}{3NV}\,.$
 \end{itemize}
 
 \subsection{习题4.26}
+\begin{itemize}
+	\item[a)]
+	由各向同性, $\bar{v}_{x} = 0\,.$
+	\item[b)]
+	$\overline{v_{x}^{2}} = \frac{1}{3} \overline{v^{2}} = \frac{1}{3} \frac{2}{m} \bar{\epsilon} = \frac{2}{3m} \frac{3}{5} \mu_{0} = \frac{2\epsilon_{\rm F}}{5m}\,.$
+\end{itemize}
+
+\subsection{习题4.30}
+\begin{align*}
+\mathcal{Z} & = \sum_{n=0}^{+\infty} e^{-\beta(n+1/2)\gamma V^{-1}} = \frac{\exp{(-\beta\gamma/(2V))}}{1-\exp{(-\beta\gamma/V)}} \,; \\
+\Rightarrow \quad{} \log{\mathcal{Z}} & = -\frac{1}{2} \beta\gamma V^{-1} - \log{\left(1-e^{-\beta\gamma V^{-1}}\right)} \,; \\
+\Rightarrow \quad{} U & = - N \frac{\partial \log\mathcal{Z}}{\partial \beta} = \frac{N\gamma}{2V} \frac{1+e^{-\beta\gamma V^{-1}}}{1-e^{-\beta\gamma V^{-1}}} = \frac{N\gamma}{2V} \coth{(\beta\gamma/(2V))} \,; \\
+\Rightarrow \quad{} C_{V} & = \left(\frac{\partial U}{\partial T}\right)_{V} = -\frac{1}{k_{B}T^{2}} \left(\frac{\partial U}{\partial \beta}\right)_{V} = \frac{N\gamma^{2}}{4k_{B}T^{2}V^{2}\sinh^{2}{(\beta\gamma/(2V))}} \,; \\
+\Rightarrow \quad{} p & = \frac{N}{\beta} \frac{\partial \log\mathcal{Z}}{\partial V} = \frac{N\gamma}{2V^{2}} \coth{(\beta\gamma/(2V))} \,; \\
+\Rightarrow \quad{} \bar{N}_{n} & = N \frac{e^{-\beta(n+1/2)\gamma V^{-1}}}{\sum_{n'=0}^{+\infty} e^{-\beta(n'+1/2)\gamma V^{-1}}} = N e^{-n\beta\gamma V^{-1}} \left( 1- e^{-\beta\gamma V^{-1}} \right) = 2 N e^{-(n+1/2)\beta\gamma V^{-1}} \sinh{(\beta\gamma/(2V))}\,.
+\end{align*}
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.35\textwidth]{ut}
+\end{figure}
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.35\textwidth]{cvt}
+\end{figure}
+
+\newpage
+\section{第五章}
 
 \end{document}
