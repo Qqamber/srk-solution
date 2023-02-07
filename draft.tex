@@ -580,6 +580,32 @@ pv = RT \quad{} & \Rightarrow \quad{} p {\rm d}{v} + v {\rm d}{p} = R{\rm d}{T} 
 \Rightarrow \quad{} L & = L_{0} + \int_{0}^{T} (c_{p}^{0} - c_{p}^{l}) {\rm d}T - RT^{2} \left( \frac{{\rm d}{B}}{{\rm d}{T}} p + \frac{1}{2} \frac{{\rm d}{C}}{{\rm d}{T}} p^{2} + \cdots \right)\,.
 \end{align*}
 
+\subsection{习题5.10}
+\begin{itemize}
+	\item[a)]
+	\begin{align*}
+    \left(\frac{\partial{s}}{\partial{p}}\right)_{T} = -\left(\frac{\partial{v}}{\partial{T}}\right)_{p} \quad{}\Rightarrow\quad{} {\rm{d}}c_{p} & = \left(\frac{\partial{c_{p}}}{\partial{T}}\right)_{p}{\rm{d}}T + \left(\frac{\partial{c_{p}}}{\partial{p}}\right)_{T}{\rm{d}}p = \left(\frac{\partial{c_{p}}}{\partial{T}}\right)_{p}{\rm{d}}T + T\left[\frac{\partial}{\partial{p}}\left(\frac{\partial{s}}{\partial{T}}\right)_{p}\right]_{T}{\rm{d}}p \\ & = \left(\frac{\partial{c_{p}}}{\partial{T}}\right)_{p}{\rm{d}}T + T\left[\frac{\partial}{\partial{T}}\left(\frac{\partial{s}}{\partial{p}}\right)_{T}\right]_{p}{\rm{d}}p = \left(\frac{\partial{c_{p}}}{\partial{T}}\right)_{p}{\rm{d}}T - T\left[\frac{\partial}{\partial{T}}\left(\frac{\partial{v}}{\partial{T}}\right)_{p}\right]_{p}{\rm{d}}p \\ & = \left(\frac{\partial{c_{p}}}{\partial{T}}\right)_{p}{\rm{d}}T - T\left[\alpha\left(\frac{\partial{v}}{\partial{T}}\right)_{p}+v\left(\frac{\partial{\alpha}}{\partial{T}}\right)_{p}\right]{\rm{d}}p \quad{} \text{making use of $(\partial{v}/\partial{T})_{p}=\alpha{v}$}
+    \end{align*}
+    \begin{align*}
+    {\rm{d}}c_{p1}={\rm{d}}c_{p2} \quad{}&\Rightarrow\quad{} \left(\frac{\partial{c_{p1}}}{\partial{T}}\right)_{p}{\rm{d}}T - T\left[\alpha_{1}\left(\frac{\partial{v_{1}}}{\partial{T}}\right)_{p}+v_{1}\left(\frac{\partial{\alpha_{1}}}{\partial{T}}\right)_{p}\right]{\rm{d}}p = \left(\frac{\partial{c_{p2}}}{\partial{T}}\right)_{p}{\rm{d}}T - T\left[\alpha_{2}\left(\frac{\partial{v_{2}}}{\partial{T}}\right)_{p}+v_{2}\left(\frac{\partial{\alpha_{2}}}{\partial{T}}\right)_{p}\right]{\rm{d}}p \\ &\Rightarrow\quad{} \frac{{\rm{d}}p}{{\rm{d}}T} = \frac{\Delta\left(\partial{c_{p}}/\partial{T}\right)_{p}}{Tv\Delta\left(\partial{\alpha}/\partial{T}\right)_{p}} \quad{} \text{making use of $\alpha_{1}=\alpha_{2}$, $v_{1}=v_{2}\equiv{v}$, and $(\partial{v_{1}}/\partial{T})_{p}=(\partial{v_{2}}/\partial{T})_{p}$\,.}
+    \end{align*}
+	\item[b)]
+	\begin{align*}
+	{\rm{d}\alpha} & = \left(\frac{\partial{\alpha}}{\partial{T}}\right)_{p}{\rm{d}}T + \left(\frac{\partial{\alpha}}{\partial{p}}\right)_{T}{\rm{d}}p = \left(\frac{\partial{\alpha}}{\partial{T}}\right)_{p}{\rm{d}}T + \left[\frac{\partial}{\partial{p}}\left\{\frac{1}{v}\left(\frac{\partial{v}}{\partial{T}}\right)_{p}\right\}\right]_{T}{\rm{d}}p \\ & \sim \left(\frac{\partial{\alpha}}{\partial{T}}\right)_{p}{\rm{d}}T + \frac{1}{v} \left[\frac{\partial}{\partial{p}}\left(\frac{\partial{v}}{\partial{T}}\right)_{p}\right]_{T}{\rm{d}}p \quad{} \text{inspired by the last step in a), we have omitted one term here} \\ & = \left(\frac{\partial{\alpha}}{\partial{T}}\right)_{p}{\rm{d}}T + \frac{1}{v} \left[\frac{\partial}{\partial{T}}\left(\frac{\partial{v}}{\partial{p}}\right)_{T}\right]_{p}{\rm{d}}p = \left(\frac{\partial{\alpha}}{\partial{T}}\right)_{p}{\rm{d}}T - \frac{1}{v} \left(\frac{\partial{[\kappa{v}]}}{\partial{T}}\right)_{p}{\rm{d}}p \\ & \sim \left(\frac{\partial{\alpha}}{\partial{T}}\right)_{p}{\rm{d}}T - \left(\frac{\partial{\kappa}}{\partial{T}}\right)_{p}{\rm{d}}p \quad{} \text{similarly, we have omitted one term here}
+	\end{align*}
+	\begin{align*}
+	{\rm{d}}\alpha_{1}={\rm{d}}\alpha_{2} \quad{}&\Rightarrow\quad{} \left(\frac{\partial{\alpha_{1}}}{\partial{T}}\right)_{p}{\rm{d}}T - \left(\frac{\partial{\kappa_{1}}}{\partial{T}}\right)_{p}{\rm{d}}p = \left(\frac{\partial{\alpha_{2}}}{\partial{T}}\right)_{p}{\rm{d}}T - \left(\frac{\partial{\kappa_{2}}}{\partial{T}}\right)_{p}{\rm{d}}p \\ &\Rightarrow\quad{} \frac{{\rm{d}}p}{{\rm{d}}T}=\frac{\Delta(\partial{\alpha}/\partial{T})_{p}}{\Delta(\partial{\kappa}/\partial{T})_{p}}\,.
+	\end{align*}
+	\item[c)]
+	\begin{align*}
+	{\rm{d}}\kappa=\left(\frac{\partial{\kappa}}{\partial{T}}\right)_{p}{\rm{d}}T + \left(\frac{\partial{\kappa}}{\partial{p}}\right)_{T}{\rm{d}}p = -\left(\frac{\partial{\alpha}}{\partial{p}}\right)_{T}{\rm{d}}T + \left(\frac{\partial{\kappa}}{\partial{p}}\right)_{T}{\rm{d}}p \quad{} \text{the derivation is similar to b)}
+	\end{align*}
+	\begin{align*}
+	{\rm{d}}\kappa_{1}={\rm{d}}\kappa_{2} \quad{}\Rightarrow\quad{} \frac{{\rm{d}}p}{{\rm{d}}T}=\frac{\Delta(\partial{\alpha}/\partial{p})_{T}}{\Delta(\partial{\kappa}/\partial{p})_{T}}\,.
+	\end{align*}
+	
+\end{itemize}
+
 \subsection{习题5.13}
 定义跃迁矩阵[见苏书(5.6.6)]
 \[ \mathcal{T} = \begin{pmatrix} e^{\beta(\epsilon+H)} & e^{-\beta\epsilon} \\ e^{-\beta\epsilon} & e^{\beta(\epsilon-H)} \end{pmatrix}\,, \]
@@ -610,6 +636,9 @@ pv = RT \quad{} & \Rightarrow \quad{} p {\rm d}{v} + v {\rm d}{p} = R{\rm d}{T} 
 \end{align*}
 因此
 \[ \frac{pV}{RT}\bigg\rvert_{c} = \frac{2p(V-b)}{RT} \frac{RTV^{3}}{2a(V-b)^2} \frac{a(V-b)}{RTV^{2}} \bigg\rvert_{c} = 2 e^{-a/RTV} = 2 e^{-2} \approx 0.27\,. \]
+
+\subsection{习题5.15}
+\[ K_{p} = \frac{x_{\rm CO_{2}}x_{\rm H_{2}}}{x_{\rm CO}x_{\rm H_{2}O}} = \frac{0.7\times80.38}{9.46\times9.46} \approx 0.6287\,. \]
 
 \end{document}
 
